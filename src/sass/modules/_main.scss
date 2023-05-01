@@ -1,0 +1,131 @@
+
+.section-1 {
+    background-color: rgb(232, 230, 224);
+
+    p {
+
+        font-size: 1.8rem;
+        color: rgb(135, 132, 136);
+
+        .pro {
+            background-color: rgb(38, 162, 204);
+            color: white;
+        }
+
+        .complexity {
+            color: rgb(38, 162, 204);
+            font-weight: 600;
+        }
+
+        .simplicity {
+            color: rgb(124, 125, 128);
+            font-weight: 600;
+
+        }
+    }
+}
+
+.section-2 {
+
+
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+
+    .col-w-h {
+        margin-inline: 1rem;
+        width: 17vw;
+        height: auto;
+        
+        background-color: rgb(226, 224, 224);
+        margin-bottom: 10vh;
+    }
+}
+
+@media (min-width:375px) and (max-width:425px) {
+    .section-2 {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col-w-h {
+            margin-inline: 1rem;
+            width: 82vw;
+            height: 40vh;
+            background-color: rgb(226, 224, 224);
+            margin-bottom: 10vh;
+        }
+    }
+}
+
+// section-3
+.section-3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+
+
+    .card1 {
+        width: 30vw;
+        margin-right: 1rem;
+        border: none;
+
+        .card-body {
+            text-align: start;
+            h5{
+                color:rgb(151, 146, 148)
+            }
+            .p-gray{
+                color:rgb(210, 214, 225)
+            }
+        }
+    }
+
+    .card {
+        margin-inline: 0.2rem;
+    }
+
+    .card-body-color {
+        background-color: rgb(56, 72, 95);
+        height: 13vh;
+    }
+
+    .card-text {
+        text-align: center;
+        color: rgb(90, 95, 108);
+
+    }
+}
+
+@media (min-width:375px) and (max-width:425px) {
+    .section-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10rem;
+
+
+        .card1 {
+            width: 300px;
+            border: none;
+
+            .card-body {
+                text-align: center;
+            }
+        }
+
+        .card {
+            margin-inline: 0.2rem;
+            margin-bottom: 2vh;
+        }
+
+        .card-body-color {
+            background-color: rgb(56, 72, 95);
+            height: 20vh;
+        }
+
+        .card-text {
+            text-align: center;
+            color: rgb(90, 95, 108);
+        }
+    }
+}

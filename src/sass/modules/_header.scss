@@ -1,0 +1,109 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(54, 59, 71);
+    height: 8vh;
+
+    div h3 {
+        color: white;
+        font-size: 3rem;
+    }
+
+    div ul {
+        display: flex;
+
+        li {
+            list-style: none;
+
+        }
+
+        li a {
+            text-decoration: none;
+            color: rgb(111, 111, 113);
+            margin-inline: 2rem;
+            font-size: 1.3rem;
+            transition: 0.001s ease;
+        }
+
+        li a:hover {
+            background-color: rgb(54, 118, 187);
+            color: white;
+            padding: 10px 10px 35px 10px;
+            border-radius: 2px;
+        }
+
+    }
+
+    .font-bars {
+        display: none;
+    }
+
+@media (min-width:375px) and (max-width:425px) {
+        .font-bars {
+            display: block;
+            margin-left: 120px;
+        }
+
+        nav div {
+            position: relative;
+            z-index: 1;
+
+        }
+        
+
+        div ul {
+            display: none;
+            background-color: rgb(54, 59, 71);
+            position: absolute;
+            right: 1px;
+            min-width: 10px;
+            height: auto;
+            top: calc(8vh);
+
+
+
+        }
+
+        ul::before {
+            content: "";
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent #ddd transparent;
+            position: absolute;
+            right: 45px;
+            top: -20px;
+        }
+
+        div:hover ul {
+            display: block;
+
+        }
+
+        div ul li a:hover {
+            background-color: rgba(54, 118, 187, 0.808);
+            color: white;
+            padding: 1px;
+
+            border-radius: 2px;
+        }
+
+
+        ul li a {
+            font-size: 20px;
+            padding: 10px 20px 30px 0px ;
+            transition: 0.3s;
+            text-decoration: none;
+            color: #ddd;
+        }
+    }
+
+
+}
+.bg-image{
+    background-image: url(../../../public/images/bg-header.png);
+    height: 40vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
